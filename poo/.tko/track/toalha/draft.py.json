@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-16_19-37-32",
+            "content": "@@ -1,29 +0,0 @@\n-print(%22minha toalha %C3%A9 azul%22)%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-09-16_19-39-20",
+            "content": "print(\"minha toalha \u00e9 azul\")\n",
+            "lines": "1"
+        }
+    ]
+}

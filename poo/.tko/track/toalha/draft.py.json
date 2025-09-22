@@ -47,8 +47,28 @@
         },
         {
             "label": "2025-09-16_20-23-00",
-            "content": "\nclass Towel:\n    def __init__(self, color: str, size: str): #construtor\n        self.color = color #atributos\n        self.size = size\n        self.wetness = 0\n\n    def __str__ (self):\n        return f\"color:{self.color}, tam: {self.size}, umi: {self.wetness}\"\n\ntowel = Towel(\"green\", \"g\") #refrencia e objetos\ntowel2 = Towel(\"pink\", \"p\")\n\nprint(towel.color) #red\ntowel.color = \"white\" \nprint(towel.color) #white\nprint(towel.size)\nprint(towel.wetness)\nprint(towel)",
+            "content": "@@ -159,406 +159,8 @@\n  0%0A%0A\n-    def dry(self, amount:int) -%3E None:%0A        self.wetness += amount%0A        if self.wetness %3E= self.getMaxWetness:%0A            print(%22toalha encharcada%22)%0A            self.wetness == self.getMaxWetness%0A    %0A    def getMaxWetness(self) -%3E int:%0A        if self.size == %22p%22:%0A            return 10%0A        if self.size == %22m%22:%0A            return 20%0A        if self.size == %22g%22:%0A            return 30%0A%0A\n     \n@@ -262,14 +262,11 @@\n %0A%0Ato\n-alha_g\n+wel\n  = T\n@@ -307,22 +307,20 @@\n jetos%0Ato\n-alha_p\n+wel2\n  = Towel\n@@ -334,36 +334,35 @@\n , %22p%22)%0A%0Aprint(to\n-alha\n+wel\n .color) #red%0Atoa\n@@ -360,20 +360,19 @@\n  #red%0Ato\n-alha\n+wel\n .color =\n@@ -389,20 +389,19 @@\n print(to\n-alha\n+wel\n .color) \n@@ -415,20 +415,19 @@\n print(to\n-alha\n+wel\n .size)%0Ap\n@@ -437,113 +437,29 @@\n t(to\n-alha.wetness)%0Aprint(toalha)%0Atoalha_p.dry(10)%0Aprint(toalha_p.wetness)%0Atoalha_p.dry(10)%0Aprint(toalha_p.wetness\n+wel.wetness)%0Aprint(towel\n )\n",
             "lines": "19"
+        },
+        {
+            "label": "2025-09-22_19-02-46",
+            "content": "@@ -737,16 +737,146 @@\n , %22p%22)%0A%0A\n+print(toalha.color) #red%0Atoalha.color = %22white%22 %0Aprint(toalha.color) #white%0Aprint(toalha.size)%0Aprint(toalha.wetness)%0Aprint(toalha)\n %0Atoalha_\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-09-22_19-03-05",
+            "content": "@@ -270,18 +270,16 @@\n xWetness\n-()\n :%0A      \n@@ -337,16 +337,17 @@\n etness =\n+=\n  self.ge\n@@ -361,10 +361,8 @@\n ness\n-()\n %0A   \n@@ -555,25 +555,8 @@\n n 30\n-%0A        return 0\n %0A%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-22_19-04-22",
+            "content": "@@ -775,9 +775,10 @@\n dry(\n-5\n+10\n )%0Apr\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-09-22_19-04-45",
+            "content": "\nclass Towel:\n    def __init__(self, color: str, size: str): #construtor\n        self.color = color #atributos\n        self.size = size\n        self.wetness = 0\n\n    def dry(self, amount:int) -> None:\n        self.wetness += amount\n        if self.wetness >= self.getMaxWetness():\n            print(\"toalha encharcada\")\n            self.wetness = self.getMaxWetness()\n    \n    def getMaxWetness(self) -> int:\n        if self.size == \"p\":\n            return 10\n        if self.size == \"m\":\n            return 20\n        if self.size == \"g\":\n            return 30\n        return 0\n\n    def __str__ (self):\n        return f\"color:{self.color}, tam: {self.size}, umi: {self.wetness}\"\n\ntoalha_g = Towel(\"green\", \"g\") #refrencia e objetos\ntoalha_p = Towel(\"pink\", \"p\")\n\n\ntoalha_p.dry(5)\nprint(toalha_p.wetness)\ntoalha_p.dry(10)\nprint(toalha_p.wetness)",
+            "lines": "33"
         }
     ]
 }

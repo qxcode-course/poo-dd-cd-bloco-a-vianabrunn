@@ -8,12 +8,12 @@ class Towel:
     def __str__ (self):
         return f"color:{self.color}, tam: {self.size}, umi: {self.wetness}"
 
-towel = Towel("green", "g") #refrencia e objetos
-towel2 = Towel("pink", "p")
+toalha = Towel("green", "g") #refrencia e objetos
+toalha = Towel("pink", "p")
 
-print(towel.color) #red
-towel.color = "white" 
-print(towel.color) #white
-print(towel.size)
-print(towel.wetness)
-print(towel)
+print(toalha.color) #red
+toalha.color = "white" 
+print(toalha.color) #white
+print(toalha.size)
+print(toalha.wetness)
+print(toalha)

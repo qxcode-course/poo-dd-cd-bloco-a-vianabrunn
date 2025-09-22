@@ -33,8 +33,22 @@ class Towel:
 toalha_g = Towel("green", "g") #refrencia e objetos
 toalha_p = Towel("pink", "p")
 
-
-toalha_p.dry(5)
-print(toalha_p.wetness)
-toalha_p.dry(10)
-print(toalha_p.wetness)
+def main():
+    toalha = Towel("", "")
+    while True:
+        line: str = input()
+        args: list[str] = line.split(" ")
+        if args[0] == "end":
+            break 
+        if args[0] == "new":
+            color = args[1]
+            size = args [2]
+            toalha = Towel(color, size)
+        elif args[0] == "show":
+            print(toalha)
+        elif args[0] == "dry":
+            amount: int = int(args[1])
+            toalha.dry(amount)
+        else:
+            print("Comando invalido")
+main()

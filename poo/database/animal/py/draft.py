@@ -19,21 +19,29 @@ class Animal:
         elif self.estagio == 4:
             return "morto"
         return 0
+    
     def makeSound (self) ->str:
         if self.estagio == 0 :
             print("---")
-        elif self.estagio>4:
+        elif self.estagio>=4:
             print("RIP")
+        else:
+            print(self.som)
+
     def getMaxAge  (self) -> int:
         if self.estagio > 4:
           self.estagio = 4
         return 4
+    
     def ageBy (self, increment: int) -> None:
         self.estagio += increment
         if self.estagio >= 4 :
-            print(f"{self.especie} morreu")
+            print(f"warning: {self.especie} morreu")
+            self.estagio = 4
+
     def __str__(self)-> str:
-        return f"{self.especie}:{self.estagio}:{self.som} "
+        return f"{self.especie}:{self.estagio}:{self.som}"
+    
 def main():
     animal: Animal = ("", "")
     
@@ -49,6 +57,11 @@ def main():
             animal = Animal(especie, som)
         elif args[0] == "show":
             print(animal)
+        elif args[0] == "grow":
+            increment: int = int(args[1])
+            animal.ageBy(increment)
+        elif args[0] == "noise":
+            animal.makeSound()
         else:
             print("comando invalido")
 main()

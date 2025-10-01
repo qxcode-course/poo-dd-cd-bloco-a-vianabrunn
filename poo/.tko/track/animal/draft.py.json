@@ -97,8 +97,73 @@
         },
         {
             "label": "2025-10-01_01-36-41",
-            "content": "class Animal:\n    def __init__ (self, specie: str, sound: str):\n        self.especie = specie\n        self.som = sound \n        self.estagio = 0\n    \n    def __str__ (self) -> str:\n        return f\"especie: {self.especie}, estagio{self.estagio}, som?{self.som}\"\n    \n    def estagio (self) -> int:\n        if self.estagio == 0:\n            return \"filhote\"\n        elif self.estagio == 1:\n            return \"crian\u00e7a\"\n        elif self.estagio == 2:\n             return \"adulto\"\n        elif  self.estagio == 3:\n            return \"idoso\"\n        elif self.estagio == 4:\n            return \"morto\"\n        return 0\n    def makeSound (self) ->str:\n        if self.estagio == 0 :\n            print(\"---\")\n        elif self.estagio>4:\n            print(\"RIP\")\n    def getMaxAge  (self) -> int:\n        if self.estagio > 4:\n          self.estagio = 4\n        return 4\n    def ageBy (self, increment: int) -> None:\n        self.estagio += increment\n        if self.estagio >= 4 :\n            print(f\"{self.especie} morreu\")\n    def __str__(self)-> str:\n        return f\"{self.especie}:{self.estagio}:{self.som} \"\ndef main():\n    animal: Animal = (\"\", \"\")\n    \n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split()\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            especie = args [1]\n            som = args [2]\n            animal = Animal(especie, som)\n        elif args[0] == \"show\":\n            print(animal)\n        else:\n            print(\"comando invalido\")\nmain()",
+            "content": "@@ -1098,16 +1098,17 @@\n elf.som%7D\n+ \n %22%0Adef ma\n",
             "lines": "54"
+        },
+        {
+            "label": "2025-10-01_10-14-20",
+            "content": "@@ -1098,17 +1098,16 @@\n elf.som%7D\n- \n %22%0Adef ma\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-01_10-14-31",
+            "content": "@@ -1098,16 +1098,17 @@\n elf.som%7D\n+ \n %22%0Adef ma\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-01_10-14-39",
+            "content": "@@ -1098,17 +1098,16 @@\n elf.som%7D\n- \n %22%0Adef ma\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-01_10-15-32",
+            "content": "@@ -1098,16 +1098,17 @@\n elf.som%7D\n+ \n %22%0Adef ma\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-01_10-16-06",
+            "content": "@@ -608,21 +608,16 @@\n eturn 0%0A\n-    %0A\n     def \n@@ -636,24 +636,24 @@\n elf) -%3Estr:%0A\n+\n         if s\n@@ -750,17 +750,16 @@\n (%22RIP%22)%0A\n-%0A\n     def \n@@ -857,21 +857,16 @@\n eturn 4%0A\n-    %0A\n     def \n@@ -1012,18 +1012,16 @@\n orreu%22)%0A\n-%0A%0A\n     def \n@@ -1100,21 +1100,16 @@\n f.som%7D%22%0A\n-    %0A\n def main\n@@ -1463,24 +1463,24 @@\n  == %22show%22:%0A\n+\n             \n@@ -1497,131 +1497,8 @@\n al)%0A\n-        elif args%5B0%5D == %22grow%22:%0A            increment: int = int(args%5B1%5D)%0A            animal.ageBy(increment)%0A            %0A\n     \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-01_11-09-31",
+            "content": "@@ -1003,17 +1003,8 @@\n t(f%22\n-warning: \n %7Bsel\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-01_11-10-05",
+            "content": "@@ -1036,36 +1036,8 @@\n u%22)%0A\n-            self.estagio = 4\n %0A%0A  \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-01_11-10-42",
+            "content": "@@ -1666,68 +1666,8 @@\n     \n-    elif args%5B0%5D == %22noise%22:%0A            animal.makeSound()%0A\n     \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-01_11-18-50",
+            "content": "@@ -758,52 +758,8 @@\n IP%22)\n-%0A        else:%0A            return Animal.som\n %0A%0A  \n@@ -1722,17 +1722,16 @@\n Sound()%0A\n-%0A\n         \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-01_11-20-28",
+            "content": "@@ -788,20 +788,22 @@\n  return \n-self\n+Animal\n .som%0A%0A  \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-10-01_11-20-47",
+            "content": "@@ -785,22 +785,23 @@\n     \n-print(\n+return \n self.som\n )%0A%0A \n@@ -796,17 +796,16 @@\n self.som\n-)\n %0A%0A    de\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-10-01_11-21-24",
+            "content": "@@ -727,17 +727,16 @@\n estagio%3E\n-=\n 4:%0A     \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-10-01_11-21-57",
+            "content": "class Animal:\n    def __init__ (self, specie: str, sound: str):\n        self.especie = specie\n        self.som = sound \n        self.estagio = 0\n    \n    def __str__ (self) -> str:\n        return f\"especie: {self.especie}, estagio{self.estagio}, som?{self.som}\"\n    \n    def estagio (self) -> int:\n        if self.estagio == 0:\n            return \"filhote\"\n        elif self.estagio == 1:\n            return \"crian\u00e7a\"\n        elif self.estagio == 2:\n             return \"adulto\"\n        elif  self.estagio == 3:\n            return \"idoso\"\n        elif self.estagio == 4:\n            return \"morto\"\n        return 0\n    \n    def makeSound (self) ->str:\n        if self.estagio == 0 :\n            print(\"---\")\n        elif self.estagio>=4:\n            print(\"RIP\")\n        else:\n            print(self.som)\n\n    def getMaxAge  (self) -> int:\n        if self.estagio > 4:\n          self.estagio = 4\n        return 4\n    \n    def ageBy (self, increment: int) -> None:\n        self.estagio += increment\n        if self.estagio >= 4 :\n            print(f\"warning: {self.especie} morreu\")\n            self.estagio = 4\n\n    def __str__(self)-> str:\n        return f\"{self.especie}:{self.estagio}:{self.som}\"\n    \ndef main():\n    animal: Animal = (\"\", \"\")\n    \n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split()\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            especie = args [1]\n            som = args [2]\n            animal = Animal(especie, som)\n        elif args[0] == \"show\":\n            print(animal)\n        elif args[0] == \"grow\":\n            increment: int = int(args[1])\n            animal.ageBy(increment)\n        elif args[0] == \"noise\":\n            animal.makeSound()\n\n        \n        else:\n            print(\"comando invalido\")\nmain()",
+            "lines": "69"
         }
     ]
 }

@@ -47,6 +47,9 @@ def main():
         elif args[0] == "dry":
             amount : int = int(args[1])
             toalha.dry(amount)
+        elif args[0] == "secar":
+            toalha.wringOut()
+            print("a toalha secou por completo")
         else:
             print("comando invalido")
 main()

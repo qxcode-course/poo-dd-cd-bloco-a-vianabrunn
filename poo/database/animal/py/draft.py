@@ -5,7 +5,7 @@ class Animal:
         self.estagio = 0
     
     def __str__ (self) -> str:
-        return f"especie: {self.especie}, estagio{self.estagio}, som?{self.som}"
+        return f"especie: {self.especie}, estagio{self.estagio}, som:{self.som}"
     
     def estagio (self) -> int:
         if self.estagio == 0:

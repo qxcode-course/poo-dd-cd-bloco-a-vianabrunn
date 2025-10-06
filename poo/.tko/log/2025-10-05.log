@@ -29,3 +29,5 @@
 2025-10-05 22:32:23, EXEC, v:1, k:calculadora, mode:FULL, rate:81, size:60
 2025-10-05 22:35:29, EXEC, v:1, k:calculadora, mode:FULL, rate:81, size:59
 2025-10-05 22:36:44, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:62
+2025-10-05 22:38:23, MOVE, v:1, k:calculadora, mode:BACK
+2025-10-05 22:39:38, SELF, v:1, k:calculadora, rate:100, iagen:s, alone:8, study:120
